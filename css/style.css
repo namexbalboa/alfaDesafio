@@ -1,0 +1,54 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.navAdjust{
+  padding: 0vh 8vw 0vh 8vw;
+}
+.navColor {
+  background-color: #38b649
+}
+.navItemColor{
+  font-size: calc(10px + 0.75vw);
+  color: white;
+}
+.logoAdjust{
+  height: 50px;
+  padding-top: 10px;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 85%;
+  }
+}
+.titleBox {
+  background-color: #006149;
+  margin: 0vh 0vw -2.5vh 0vw;
+  padding: 1px 12vw 0px 12vw ;
+}
+.customForm{
+  background-color:white;
+}
+.headerColor {
+  color: #ffbe10;
+}

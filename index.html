@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Alfa - Cadastro</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper navColor navAdjust">
+                <!-- Logo -->
+                <a href="#" class="brand-logo">
+                  <img src="assets/img/alfalogo.png" class="logoAdjust"/>
+                </a>
+
+                <!-- Ícone para abrir no Mobile -->
+                <a href="#" data-target="mobile-navbar" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <ul id="navbar-items" class="right hide-on-med-and-down">
+                    <li class="active"><a href="#" class="navItemColor">Cadastro</a></li>
+                    <li>
+                        <a class="dropdown-trigger navItemColor" data-target="dropdown-menu" href="#">
+                            Equipamentos <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                    </li>
+                    <li><a href="#" class="navItemColor">Configurações</a></li>
+                    <li><a href="#" class="navItemColor">Minha Conta</a></li>
+                </ul>
+
+                <!-- Dropdown -->
+                <ul id="dropdown-menu" class="dropdown-content">
+                    <li><a href="#">Alfa</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Tennant</a></li>
+                </ul>
+
+                <!-- Dropdown -->
+                <ul id="dropdown-menu-m" class="dropdown-content">
+                    <li><a href="#">Alfa</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Tennant</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+     <!-- Menu Mobile -->
+     <ul id="mobile-navbar" class="sidenav">
+        <li class="active"><a href="#" class="navItemColor">Cadastro</a></li>
+        <li>
+            <a class="dropdown-trigger navItemColor" data-target="dropdown-menu-m" href="#">
+                Equipamentos <i class="material-icons right">arrow_drop_down</i>
+            </a>
+        </li>
+        <li><a href="#" class="navItemColor">Configurações</a></li>
+        <li><a href="#" class="navItemColor">Minha Conta</a></li>
+    </ul>
+
+  <div class="section no-pad-bot bgColorPage" id="index-banner">
+    <div class="container z-depth-5">
+
+      <div class="titleBox">
+        <h3 class="header center headerColor">Cadastro de Equipamento</h3>
+        <p class="header center white-text ">Realize o cadastro do seu equipamento <strong>Alfa</strong> para obter a comodidade que seu equipamento e sua empresa precisam, seja avisado das próximas manutenções e conte sempre conosco! (*obs: texto ilustrátivo)</p>
+        <br>
+      </div>
+
+      <div class="row">
+          <form class="col s12 customForm">
+
+            <br>
+
+            <div class="row">
+              <div class="input-field col m4 s10 offset-s1 offset-m1">
+                  <input id="first_name" type="text" class="validate" required  minlength=4 maxlength="200">
+                  <label for="first_name">Nome</label>
+                  <span class="helper-text" data-error="Preencha o Nome" data-success="Ok!">*Campo Obrigatório</span>
+              </div>
+              <div class="input-field col m4 s10 offset-s1 offset-m1">
+                <input id="price" type="text" class="validate" type="tel" minlength=3 maxlength="20" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal=",">
+                <label for="price">Preço</label>
+                <span class="helper-text" data-error="Preencha o Preço" data-success="Ok!">*Campo Obrigatório</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col m4 s10 offset-s1 offset-m1">
+                  <select class="icons" id="tipo" name="tipo" required>
+                      <option value="" selected>Selecione</option>
+                      <option value="lavar" data-icon="assets/img/lavadora.jpg">Lavar</option>
+                      <option value="polir" data-icon="assets/img/polidora.png">Polir</option>
+                      <option value="varrer" data-icon="assets/img/varredeira.jpg">Varrer</option>
+                    </select>
+                    <label>Tipo de Equipamento</label>
+                    <span class="helper-text" data-error="Inválido" data-success="Ok!">*Campo Obrigatório</span>
+              </div>
+              <div class="input-field col m4 s10 offset-s1 offset-m1" >
+                  <select class="icons" name="propulcao" id="propulcao" required>
+                      <option value="" selected>Selecione</option>
+                    </select>
+                    <label>Propulção</label>
+                    <span class="helper-text" data-error="Inválido" data-success="Ok!">*Campo Obrigatório</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col m4 s10 offset-s1 offset-m1">
+                <textarea id="textarea2" class="materialize-textarea" data-length="500" minlength=10 maxlength="500" required></textarea>
+                <label for="textarea2">Descrição</label>
+              </div>
+              <div class="input-field col m4 s10 offset-s1 offset-m1">
+                  <div class="file-field input-field">
+                      <div class="btn amber accent-4">
+                        <span>Foto</span>
+                        <input type="file" multiple>
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="Selecione as Fotos" required>
+                      </div>
+                    </div>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+              <div class="col s11 offset-s1 m4 offset-m8" required>
+                <button class="btn waves-effect waves-light btn-large amber accent-4">Cadastrar
+                    <i class="material-icons right">send</i>
+                </button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+                
+      <br>
+
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+
+  <footer class="page-footer orange">
+
+    <div class="footer-copyright">
+      <div class="row">
+        <div class="col ">
+          <img src="assets/img/alfalogo.png" class="logoAdjust "/>
+          <span>©2020 Alfa Tennant. Todos os direitos reservados.</span>
+          </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
